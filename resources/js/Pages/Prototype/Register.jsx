@@ -67,13 +67,18 @@ export default function Register() {
                                 </div>
                             </div>
                             <div className="grid space-y-[14px] mt-[30px]">
-                                <Button type="button" className="bg-alerange">
-                                    <span className="text-base font-semibold">
-                                        Sign Up
-                                    </span>
-                                </Button>
+                                <Link href="/prototype/dashboard">
+                                    <Button
+                                        type="button"
+                                        className="bg-alerange"
+                                    >
+                                        <span className="text-base font-semibold">
+                                            Sign Up
+                                        </span>
+                                    </Button>
+                                </Link>
                                 <Link href="/prototype/login">
-                                    <Button className="border border-white">
+                                    <Button variant="light-outline">
                                         <span className="text-base text-white">
                                             Sign In to My Account
                                         </span>

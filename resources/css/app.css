@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import "input.css";
 @import "button.css";
+@import "sidebar.css";
 
 .flex::before,
 .flex::after {
@@ -41,5 +42,45 @@
     [type="week"]:focus {
         border-color: transparent;
         --tw-ring-color: transparent;
+    }
+}
+
+/* button css */
+.btn-primary {
+    @apply bg-alerange text-white;
+}
+.btn-warnig {
+    @apply bg-yellow-500 text-white;
+}
+.btn-danger {
+    @apply bg-red-500 text-white;
+}
+.btn-light-outline {
+    @apply border-white border text-white;
+}
+.btn-white-outline {
+    @apply border-[#f1f1f1] text-black;
+}
+
+@layer components {
+    .side-link {
+        @apply flex items-center font-normal text-black text-sm w-full mb-5 gap-3 transition-all;
+    }
+
+    .side-link svg {
+        @apply text-[#B7B7B7];
+    }
+    .side-link.active {
+        @apply font-semibold border-r-[3px] border-alerange;
+    }
+
+    .side-link.active svg {
+        @apply text-alerange;
+    }
+
+    input.top-search {
+        @apply rounded-full border border-gray-2 placeholder:text-gray-1 text-base text-gray-1 px-5 py-[11px]
+        w-full max-w-[570px] focus:outline-none focus:ring-2 transition-all bg-no-repeat bg-center
+        bg-[center_right_20px];
     }
 }
