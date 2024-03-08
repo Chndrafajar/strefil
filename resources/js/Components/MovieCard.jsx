@@ -35,7 +35,7 @@ export default function MovieCard({ slug, name, category, thumbnail }) {
                     <img src="/icons/ic_play.svg" className width={50} alt />
                 </div>
                 <Link
-                    href={`/prototype/movie/${slug}`}
+                    href={`/dashboard/movie/${slug}`}
                     className="inset-0 absolute z-50"
                 ></Link>
             </div>
